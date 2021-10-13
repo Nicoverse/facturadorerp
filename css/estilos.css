@@ -98,27 +98,29 @@ body{
 
 /* Carousel */
 
-
 .seccioniconos{
-    background-color: #e33c4b;
+    background-color: #e33c4a;
 }
 
 .dispositivos{
     background-color: #F4F5F7;
 }
 footer{
-    background-color: #e33c4b; 
+    background-color: #e33c4b;
 }
 .abajoazul{
     background-color: #212d3e;
     color: #fff;
+}
+
+.navbar-shrink{
+    background-color: #212d3e;
 }
 /* Media Queries */
 @media (min-width: 992px){
     #mainNav{
     border: none;
     background-color: transparent;
-    margin-top: 2rem;
     }
     .navbar-brand img{
         height: 50px;
