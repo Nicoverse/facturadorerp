@@ -5,41 +5,44 @@ body{
     font-family: 'Roboto', sans-serif ;
     font-size: 16px;
 }
+
+/* Botones */
 .btn-color{
     background-color: #e33c4b;
     color: #fff;
     text-transform: uppercase;
-    font-weight: 500;
+    font-weight: bold;
     letter-spacing: 1px;
     border-radius: 2px;
-}
-.btn-color2{
-    background-color: #e33c4b;
-    color: #fff;
-    
-    text-transform: uppercase;
-    font-weight: 500;
-    letter-spacing: 1px;
-    border-radius: 2px;
-}
-.btn-color2:hover{
-    color: #e33c4b;
-    background-color: #fff;
-    border: 1px solid #e33c4b;
 }
 .btn-color:hover{
     color: #e33c4b !important;
     background-color: #fff !important;
 }
-.fab{
+.btn-bordes{
+    background-color: #e33c4b;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
+    border-radius: 2px;
+}
+.btn-bordes:hover{
+    color: #e33c4b;
+    background-color: #fff;
+    border: 1px solid #e33c4b;
+}
+
+/* .fab{
     color: #fff;
     margin: 5px;
-}
+} */
 
 /* Navegacion */
 
 #mainNav {
     background-color: #212d3e;
+    padding: 10px 20px;
 }
 #mainNav .navbar-toggler{
     font-size: 16px;
@@ -51,6 +54,9 @@ body{
     border: 0;
     background-color: #e33c4b;
 }
+#mainNav .navbar-toggler:active{
+    border: none;
+}
 #mainNav .navbar-nav .nav-item .micuenta{
     background-color: #e33c4b;
     color: #fff;
@@ -61,6 +67,7 @@ body{
     margin-left: 10px ;
     margin-right:10px ;
     padding: 0.3rem;
+    text-decoration: none;
 }
 #mainNav .navbar-nav .nav-item .micuenta:hover{
     color: #e33c4b;
@@ -69,6 +76,20 @@ body{
 .navbar-brand img{
     height: 40px;
 }
+.navbar{
+    padding: 0;
+}
+.navbar-nav .nav-item .nav-link{
+    color: #fff !important;
+    font-weight: bold;
+}
+.navbar-nav .nav-item .nav-link:hover{
+    color: #e33c4b !important;
+}
+#iconosnav{
+    display: none;
+}
+
 
 
 /* Navegacion */
@@ -115,6 +136,7 @@ footer{
 
 .navbar-shrink{
     background-color: #212d3e;
+    padding-top: 0!important;
 }
 /* Media Queries */
 @media (min-width: 992px){
@@ -124,6 +146,13 @@ footer{
     }
     .navbar-brand img{
         height: 50px;
+    }
+    #navbar{
+        padding-top: 50px;
+        transition: .3s ease-out;
+    }
+    #iconosnav{
+        display: flex;
     }
 }
 /* Media Queries */
