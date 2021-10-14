@@ -3,7 +3,11 @@
 
 body{
     font-family: 'Roboto', sans-serif ;
-    font-size: 16px;
+}
+
+.espaciado{
+    padding: 3rem 0;
+ 
 }
 
 /* Botones */
@@ -32,6 +36,32 @@ body{
     background-color: #fff;
     border: 1px solid #e33c4b;
 }
+/* Botones Fin */
+
+/* Texto */
+.texto-normal{
+    color: #4e565f;
+    font-size: 14px;
+    font-weight:normal;
+}
+.texto-contraste{
+    color: #fff;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+.titurojo{
+    color: #e33c4b;
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: bold;
+}
+.titublanc{
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+}
+/* Texto */
 
 /* .fab{
     color: #fff;
@@ -42,7 +72,7 @@ body{
 
 #mainNav {
     background-color: #212d3e;
-    padding: 10px 20px;
+    
 }
 #mainNav .navbar-toggler{
     font-size: 16px;
@@ -135,25 +165,23 @@ i.fab {
     margin: 5px;
     border-radius: 100%;
     background-color: transparent;
-    border: 2px solid #fff;
+    border: 1px solid #fff;
 }
 .carousel-indicators .active{
     background-color: #e33c4b;
 
-    border: 2px solid #e33c4b;
+    border: 1px solid #e33c4b;
 }
 
 /* Carousel */
 
-.seccioniconos{
-    background-color: #e33c4a;
+
+.fondorojo{
+    background-color: #e33c4b;
 }
 
 .dispositivos{
     background-color: #F4F5F7;
-}
-footer{
-    background-color: #e33c4b;
 }
 .abajoazul{
     background-color: #212d3e;
