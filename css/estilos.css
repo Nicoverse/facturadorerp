@@ -129,6 +129,19 @@ i.fab {
     z-index: 2;
     background: rgba(33, 45, 62, 0.7);
 }
+.carousel-indicators [data-bs-target]{
+    height: 10px;
+    width: 10px;
+    margin: 5px;
+    border-radius: 100%;
+    background-color: transparent;
+    border: 2px solid #fff;
+}
+.carousel-indicators .active{
+    background-color: #e33c4b;
+
+    border: 2px solid #e33c4b;
+}
 
 /* Carousel */
 
@@ -161,7 +174,7 @@ footer{
         height: 50px;
     }
     #navbar{
-        padding-top: 50px;
+        padding-top: 20px;
         transition: .3s ease-out;
     }
     #iconosnav{
