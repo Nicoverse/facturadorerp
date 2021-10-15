@@ -1,5 +1,5 @@
 
-/* Colores #e33c4b rojo #212d3e azul oscuro  */
+/* Colores #e23c4b rojo #313659 azul oscuro  */
 
 body{
     font-family: 'Roboto', sans-serif ;
@@ -67,7 +67,7 @@ body{
 /* Navegacion */
 
 #mainNav {
-    background-color: #212d3e;
+    background-color: #313659;
     
 }
 #mainNav .navbar-toggler{
@@ -171,7 +171,12 @@ i.fab {
 
 /* Carousel */
 
-
+#iconosfoot{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
 .fondorojo{
     background-color: #e33c4b;
 }
@@ -179,15 +184,20 @@ i.fab {
 .dispositivos{
     background-color: #F4F5F7;
 }
-.abajoazul{
+.oscuro{
     background-color: #212d3e;
-    color: #fff;
 }
 
 .navbar-shrink{
     background-color: #212d3e;
     padding-top: 0!important;
 }
+
+.nav-link-f{
+    text-decoration: none;
+    color: #fff;
+}
+
 /* Media Queries */
 @media (min-width: 992px){
     #mainNav{

@@ -22,6 +22,26 @@
     <!-- Estilos -->
 </head>
 <body>
+
+  <!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Iniciar sesión</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Modal -->
     <!-- Navegacion -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="navbar">
         <div class="container-lg" id="mainNav">
@@ -49,7 +69,11 @@
             </ul>
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="micuenta" href="#">Mi Cuenta</a>
+                  <!-- boton modal -->
+                  <button type="button" class="btn btn-color" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    Mi Cuenta
+                  </button>
+                  <!-- boton modal -->
                 </li>
             </ul>
             <ul class="navbar-nav" id="iconosnav">
@@ -80,8 +104,8 @@
               <div class="carousel-item active">
                 <img src="img/slide1.jpg" class="d-block w-100 imgcarousel" alt="...">
                 <div class="carousel-caption  text-center mx-auto w-50">
-                  <h2 class="text-uppercase fw-bold">lorem ipsum Dolor sit amet</h2>
-                  <p class="fw-normal">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum suscipit officiis placeat nobis voluptatibus ipsam pariatur corporis earum tempore dolore.</p>
+                  <h2 class="text-uppercase fw-bold">SISTEMA ERP 100% WEB</h2>
+                  <p class="fw-normal">Facturador ERP es un sistema 100% web, que cumple la funcion de punto de venta, ademas entrega información crucial para la toma de decisiones.</p>
                   <a href="#" class="btn btn-color my-1">Conocer mas</a>
                 </div>
                 <div class="carouseloscu"></div>
@@ -89,8 +113,8 @@
               <div class="carousel-item">
                 <img src="img/slide2.jpg" class="d-block w-100 imgcarousel" alt="...">
                 <div class="carousel-caption  text-center mx-auto w-50">
-                  <h2 class="text-uppercase fw-bold">lorem ipsum Dolor sit amet</h2>
-                  <p class="fw-normal">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum suscipit officiis placeat nobis voluptatibus ipsam pariatur corporis earum tempore dolore.</p>
+                  <h2 class="text-uppercase fw-bold">CONTABILIDAD Y COBROS</h2>
+                  <p class="fw-normal">Registros electrónicos de compra y ventas y sus modulos de cobro.</p>
                   <a href="#" class="btn btn-color my-1">Conocer mas</a>
                 </div>
                 <div class="carouseloscu"></div>
@@ -98,8 +122,8 @@
               <div class="carousel-item">
                 <img src="img/slide3.jpg" class="d-block w-100 imgcarousel" alt="...">
                 <div class="carousel-caption  text-center mx-auto w-50">
-                  <h2 class="text-uppercase fw-bold">lorem ipsum Dolor sit amet</h2>
-                  <p class="fw-normal">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum suscipit officiis placeat nobis voluptatibus ipsam pariatur corporis earum tempore dolore.</p>
+                  <h2 class="text-uppercase fw-bold">CONTROL DE DTE RECIBIDOS</h2>
+                  <p class="fw-normal">Consulta y acepta los DTE recibidos desde Facturador ERP e ingresalos a tus registros contables</p>
                   <a href="#" class="btn btn-color my-1">Conocer mas</a>
                 </div>
                 <div class="carouseloscu"></div>
@@ -120,11 +144,11 @@
         <!-- Seccion facturador -->
         <section class="container-sm text-center text-md-start py-5" id="factu">
             <article class="row align-items-center">
-                <div class="col-md-6"><figure><img class="img-fluid p-5" src="img/logo.png" alt=""></figure></div>
+                <div class="col-md-6"><figure><img class="img-fluid p-5" src="img/computadores.png" alt=""></figure></div>
                 <div class="col-md-6">
-                    <h1 class="titurojo">Lorem ipsum dolor sit amet.</h1>
-                    <p class="texto-normal">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum rem, recusandae officiis velit, ratione tempore quas cumque quae magni, minus atque enim maiores excepturi accusamus et modi esse molestias fugit?</p>
-                    <p class="texto-normal">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolores ipsum laborum quo, facere magni optio consequuntur cumque commodi, odit cum! Quaerat itaque alias, ipsa necessitatibus adipisci perspiciatis earum magnam.</p>
+                    <h1 class="titurojo">Sistema de facturación electrónica</h1>
+                    <p class="texto-normal">Robusto como un Facturador ERP, nuestro sistema ofrece la posibilidad de llevar el control de sus compras, aumentando el stock con cada factura o guía ingresada. Si compra con crédito, nuestro sistema le recordará realizar los pagos y, además, generará el libro de compras automáticamente.</p>
+                    <p class="texto-normal">También, puede facturar de forma afecta y exenta, emitir guías de despacho y boletas electrónicas, con las que se aumentará su caja, se descontará del stock y, si es necesario, se registrará las cuentas por cobrar.</p>
                     <a class="btn btn-bordes" href="#">CONOCER MAS</a>
                 </article>
             </div>
@@ -135,24 +159,25 @@
         <section class="container-fluid fondorojo py-5" >
             <div class="row align-items-center justify-content-center w-100 mx-auto container">
                 <div class="col-lg-3 col-sm-6 d-flex flex-column text-center justify-content-center align-items-center">
-                    <i class="fas fa-desktop fa-2x text-white"></i>
-                        <p class="titublanc">Lorem ipsum</p>
-                        <p class="texto-contraste">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum officia exercitationem ullam?</p>
+                    <i class="fas fa-file-invoice-dollar fa-2x text-white"></i>
+                        <p class="titublanc">Facturación electrónica</p>
+                        <p class="texto-contraste">Facturas, notas de crédito y débito, y boletas electrónicas. Todo esto en un mismo lugar y desde el lugar que  tu prefieras.</p>
                 </div>
                 <div class="col-lg-3 col-sm-6 d-flex flex-column text-center justify-content-center align-items-center">
-                  <i class="fas fa-desktop fa-2x text-white"></i>
-                      <p class="titublanc">Lorem ipsum</p>
-                      <p class="texto-contraste">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum officia exercitationem ullam?</p>
+                  <i class="fas fa-pallet fa-2x text-white"></i>
+                      <p class="titublanc">Control de inventario</p>
+                      <p class="texto-contraste">Al comprar, aumenta el stock y descuenta de caja; al vender, descuenta del stock y aumenta la caja. Todo esto, de forma automática.</p>
               </div>
               <div class="col-lg-3 col-sm-6 d-flex flex-column text-center justify-content-center align-items-center">
-                <i class="fas fa-desktop fa-2x text-white"></i>
-                    <p class="titublanc">Lorem ipsum</p>
-                    <p class="texto-contraste">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum officia exercitationem ullam?</p>
+                <i class="fas fa-money-check-alt fa-2x text-white"></i>
+                    <p class="titublanc">Control de cuentas</p>
+                    <p class="texto-contraste">Recibe notificaciones de cobros y alertas de pago. Ya no perderás el control de tus finanzas, pues Facturador ERP le recordará.</p>
             </div>
             <div class="col-lg-3 col-sm-6 d-flex flex-column text-center justify-content-center align-items-center">
               <i class="fas fa-desktop fa-2x text-white"></i>
-                  <p class="titublanc">Lorem ipsum</p>
-                  <p class="texto-contraste">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum officia exercitationem ullam?</p>
+                  <p class="titublanc">100% web</p>
+                  <p class="texto-contraste">Nuestro sistema puede ejecutarse desde su Web, sin instalaciones, desde una computadora, tablet e incluso en celular.</p>
+                  
           </div>
             </div>
         </section>
@@ -164,8 +189,8 @@
             <div class="row align-items-center">
                 <div class="col-md-6 ">
                   <h1 class="titurojo">Lorem ipsum dolor sit amet.</h1>
-                  <p class="texto-normal">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum rem, recusandae officiis velit, ratione tempore quas cumque quae magni</p>
-                  <p class="texto-normal">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolores ipsum laborum quo, facere magni optio consequuntur cumque commodi, odit cum!</p>
+                  <p class="texto-normal">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, aperiam iusto id veniam quaerat dicta impedit amet voluptate a ut! Repellat tempora laboriosam fugit atque expedita perspiciatis sint nemo esse?</p>
+                  <p class="texto-normal">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est tenetur eum accusamus modi praesentium distinctio repellendus deserunt voluptatem cumque sed odio veniam, tempora libero ut alias impedit eius temporibus dolorem!</p>
                   <a class="btn btn-bordes" href="#">CONOCER MAS</a>
                 </div>
                 <div class="col-md-6 "><figure><img class="img-fluid mt-5" src="img/impre.png" alt=""></figure></div>
@@ -176,42 +201,41 @@
         <!-- Seccion dispositivos -->
         <section class="container-fluid  dispositivos py-5 text-center text-sm-start">
             <div class="row align-items-center">
-                <div class="col-sm-6"><figure><img class="img-fluid p-5" src="img//computadores.jpg" alt=""></figure></div>
+                <div class="col-sm-6"><figure><img class="img-fluid p-5" src="img/computadores.png" alt=""></figure></div>
                 <div class="col-sm-6">
-                    <h2 class="titurojo">Lorem ipsum dolor sit amet.</h2>
-                    <p class="texto-normal">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo doloremque expedita ad, suscipit sit vero tempora!</p>
-                    <p class="texto-normal">Lorem ipsum dolor sit, amet consectetur adipisicing elit. At rem quae animi totam velit et suscipit!</p>
+                    <h2 class="titurojo">Sistema 100% web y responsivo.</h2>
+                    <p class="texto-normal">Aún con todo lo previamente expuesto, no todo está dicho. El diseño es también un elemento importante para nosotros, es por eso, que estudiamos la usabilidad en cada click y cada acción que nuestros usuarios ejecuten en el sistema, todo esto para garantizar una satisfacción completa.</p>
+                    <p class="texto-normal">Acceder a nuestro sistema no requiere de instalaciones, ni un sistema operativo específico. Facturador ERP se adapta a cualquier hábitat, pues todos sus procesos son ejecutados directamente en nuestros servidores. Así, puedes ejecutar Facturador ERP desde cualquier dispositivo, sea una tablet, un celular, su computadora e, incluso, desde un Smart TV.</p>
                 </div>
             </div>
         </section>
         <!-- Seccion dispositivos -->
 
         <!-- Seccion tecnologias -->
-        <aside class="container py-5 ">
+        <aside class="container py-5">
             <div class="row align-items-center">
                 <div class="col-md-6 text-center text-md-start">
-                    <h2 class="titurojo">Lorem ipsum dolor sit amet.</h2>
-                    <p class="texto-normal">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo doloremque expedita ad, suscipit sit vero tempora!</p>
-                    <p class="texto-normal">Lorem ipsum dolor sit, amet consectetur adipisicing elit. At rem quae animi totam velit et suscipit!</p>
+                    <h2 class="titurojo pb-1">Tecnologías de Facturador ERP</h2>
+                    <p class="texto-normal">Desarrollamos Facturador ERP en Laravel, porque es uno de los frameworks más estables y seguros de PHP. Nos entrega toda la reactividad que necesitamos para que la experiencia de nuestros usuarios sea insuperable. Y junto a HTML5 con CSS, gestionados con Bootstrap, permiten que este sistema se adapte sin problemas a todas las interfaces.</p>
                 </div>
                 <div class="col-md-6 ">
                         <div class="row text-center">
-                          <div class="col-md-4 col-6 ">
+                          <div class="col-md-4 col-6 d-flex justify-content-center">
                             <i class="fab fa-laravel fa-5x text-danger"></i>
                           </div>
-                          <div class="col-md-4 col-6 ">
+                          <div class="col-md-4 col-6 d-flex justify-content-center">
                             <i class="fab fa-bootstrap text-primary fa-5x"></i>
                           </div>
-                          <div class="col-md-4 col-6 ">
+                          <div class="col-md-4 col-6 d-flex justify-content-center">
                             <i class="fab fa-vuejs text-success fa-5x"></i>
                           </div>
-                          <div class="col-md-4 col-6 ">
+                          <div class="col-md-4 col-6 d-flex justify-content-center">
                             <i class="fab fa-html5 fa-5x text-primary"></i>
                           </div>
-                          <div class="col-md-4 col-6 ">
+                          <div class="col-md-4 col-6 d-flex justify-content-center">
                             <i class="fab fa-css3-alt text-danger fa-5x"></i>
                           </div>
-                          <div class="col-md-4 col-6 ">
+                          <div class="col-md-4 col-6 d-flex justify-content-center">
                             <i class="fab fa-js-square text-warning fa-5x"></i>
                           </div>
                         </div>
@@ -225,53 +249,68 @@
             <div class="row bg-dark">
                 <div class="col-lg-4">
                     <form>
-                        <div class="mb-3">
-                          <label for="exampleInputEmail1" class="form-label">Email address</label>
-                          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                          <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
-                        </div>
-                        <div class="mb-3">
-                          <label for="exampleInputPassword1" class="form-label">Password</label>
-                          <input type="password" class="form-control" id="exampleInputPassword1">
-                        </div>
+                      <div class="mb-3">
+                        <h3 class="text-white">Contactanos</h3>
+                        <input type="text" class="form-control bg-transparent" id="formGroupExampleInput" placeholder="Example input placeholder">
+                      </div>
+                      <div class="mb-3">
+                        <input type="text" class="form-control " id="formGroupExampleInput2" placeholder="Another input placeholder">
+                      </div>
                         <div class="mb-3 form-check">
-                          <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                          <label class="form-check-label" for="exampleCheck1">Check me out</label>
                         </div>
-                        <button type="submit" class="btn btn-primary">Submit</button>
+                        <button type="submit" class="btn btn-color">Submit</button>
                       </form>
                 </div>
-                <div class="col-lg-8">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3301.4206587189915!2d-70.74452874860103!3d-34.16116114162903!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x966343146b9bbee7%3A0x6d92521a4bedf258!2sEmagenic+Ltda!5e0!3m2!1ses!2scl!4v1501261892485" width="100%" height="350" frameborder="0" allowfullscreen=""></iframe>
+                <div class="col-lg-8 p-0">
+                    <iframe class="p-0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3301.4206587189915!2d-70.74452874860103!3d-34.16116114162903!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x966343146b9bbee7%3A0x6d92521a4bedf258!2sEmagenic+Ltda!5e0!3m2!1ses!2scl!4v1501261892485" width="100%" height="350" frameborder="0" allowfullscreen=""></iframe>
                 </div>
             </div>
          </section>
         <!-- Seccion contacto/mapa -->
 
         <!-- Footer -->
-         <footer class="fondorojo py-5">
-             <div class="container text-center">
+         <footer class="oscuro py-2">
+             <div class="container text-center text-white ">
                  <div class="row align-items-center">
                      
                      <div class="col-md-4">
-                         <figure><img class="img-fluid" src="img/logo-blanco.png" alt="#"></figure>
+                         <div class="row py-5 text-center text-md-start">
+                           <div class="col-12 ">
+                            <figure><img class="img-fluid w-50" src="img/logo-blanco.png" alt="#"></figure>
+                           </div>
+                           <div class="col-12"><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas, itaque illo aspernatur eius porro dolorum sapiente.</p></div>
+                           <div class="col-12">
+                                <ul class="navbar-nav justify-content-center d-lg-flex justify-content-md-start" id="iconosfoot">
+                                  <li class="nav-item ">
+                                      <a href="https://www.facebook.com/gorilasoftware" target="_blank" class="text-decoration-none"><i class="fab fa-facebook-f fa-xs"></i></a>
+                                  </li>
+                                  <li class="nav-item">
+                                    <a href="https://www.youtube.com/channel/UCrnnDdnU0w4anilEApGBhUg/videos" target="_blank" class="text-decoration-none"><i class="fab fa-youtube fa-xs"></i></a>
+                                  </li>
+                                  <li class="nav-item">
+                                    <a href="https://www.instagram.com/gorila.software/" target="_blank" class="text-decoration-none"><i class="fab fa-instagram fa-xs"></i></a>
+                                  </li>
+                              </ul>
+                           </div>
+                         </div>
                     </div>
                     <div class="col-md-4  text-center">
-                        <p>Enlaces</p>
-                        <ul class="navbar-nav">
-                            <li class="nav-item"><a  href="#">Formas de pago</a></li>
-                            <li class="nav-item"><a  href="#">Notificar pago</a></li>
-                            <li class="nav-item"><a  href="#">Ticket de soporte</a></li>
-                            <li class="nav-item"><a  href="#">Ayudas</a></li>
-                            <li class="nav-item"><a  href="#">Mi IP pública</a></li>
-                            <li class="nav-item"><a  href="#">Consultar DTE</a></li>
+                        <h4 class="titublanc">Enlaces</h4>
+                        <ul class="navbar-nav ">
+                            <li class="nav-item "><a  class="nav-link-f" href="#">Formas de pago</a></li>
+                            <li class="nav-item"><a  class="nav-link-f" href="#">Notificar pago</a></li>
+                            <li class="nav-item"><a  class="nav-link-f" href="#">Ticket de soporte</a></li>
+                            <li class="nav-item"><a class="nav-link-f" href="#">Ayudas</a></li>
+                            <li class="nav-item"><a  class="nav-link-f" href="#">Mi IP pública</a></li>
+                            <li class="nav-item"><a class="nav-link-f"  href="#">Consultar DTE</a></li>
                         </ul>
                      </div>
                     <div class="col-md-4">
-                         <h4>Contactenos</h4>
-                         <p>Calle italia 746 - Rancagua</p>
-                         <p>+56973320636</p>
-                         <p>contacto@facturadorerp.cl</p>
+                         <h4 class="titublanc">Contactenos</h4>
+                         <br>
+                         <p class="texto-contraste">Calle italia 746 - Rancagua</p>
+                         <p class="texto-contraste">+56973320636</p>
+                         <p class="texto-contraste">contacto@facturadorerp.cl</p>
                     </div>
                  </div>
              </div>
