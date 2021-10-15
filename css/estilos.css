@@ -65,7 +65,7 @@ body{
 /* Navegacion */
 
 #mainNav {
-    background-color: #313659;
+    background-color: #212d3e;
     
 }
 #mainNav .navbar-toggler{
@@ -88,9 +88,8 @@ body{
     font-weight: 500;
     letter-spacing: 1px;
     border-radius: 2px;
-    margin-left: 10px ;
-    margin-right:10px ;
     padding: 0.3rem;
+    margin-bottom: 10px;
     text-decoration: none;
 }
 #mainNav .navbar-nav .nav-item .micuenta:hover{
@@ -189,6 +188,7 @@ body{
 .navbar-shrink{
     background-color: #212d3e;
     padding-top: 0!important;
+    box-shadow: 5px 2px 10px rgba(0, 0, 0, 0.6);
 }
 
 .nav-link-f{
@@ -200,7 +200,7 @@ body{
 }
 .whatsapp {
     position: fixed;
-    z-index: 9999!important;
+    z-index: 1000 !important;
     border-radius: 30px;
     box-shadow: 0px 0px 10px rgb(0 0 2 / 30%);
     width: 60px;
@@ -218,7 +218,30 @@ body{
     bottom: 10px;
     right: 10px;
 }
+.btn-ingre{
+    background-color: #e33c4b;
+    color: #fff;
+    border-radius: 2px;
+}
+.contra{
+    color: #e33c4b;
+    font-size: 14px;
+    text-decoration: none;
+}
+.contra:hover{
+    color: #212d3e;
+}
+.cuenta{
+    font-size: 14px;
+}
+.modal ::-webkit-input-placeholder {
+    text-align: center;
+ }
 
+.inicio-sesion{
+    background-color: #f1f1f1;
+    box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.2);
+}
 
 /* Media Queries */
 @media (min-width: 992px){
@@ -235,6 +258,9 @@ body{
     }
     #iconosnav{
         display: flex;
+    }
+    #mainNav .navbar-nav .nav-item .micuenta{
+        margin-bottom: 0px;
     }
 }
 /* Media Queries */

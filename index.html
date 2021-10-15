@@ -23,123 +23,143 @@
 </head>
 <body>
 
-  <!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-lg modal-dialog-centered">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Iniciar sesión</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        ...
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
-      </div>
-    </div>
-  </div>
-</div>
-<!-- Modal -->
-    <!-- Navegacion -->
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="navbar">
-        <div class="container-lg" id="mainNav">
-          <a class="navbar-brand" href="#"><img src="img/logoblanco.png" ></a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <i class="fas fa-bars"></i>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ms-auto">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">INICIO</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">SISTEMA</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">MODULOS</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">CONTACTO</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">BLOG</a>
-              </li>
-            </ul>
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                  <!-- boton modal -->
-                  <button type="button" class="btn micuenta" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                    Mi Cuenta
-                  </button>
-                  <!-- boton modal -->
-                </li>
-            </ul>
-            <ul class="navbar-nav" id="iconosnav">
-                <li class="nav-item ">
-                    <a href="https://www.facebook.com/gorilasoftware" target="_blank" class="text-decoration-none"><i class="fab fa-facebook-f fa-xs bordeicono"></i></a>
-                </li>
-                <li class="nav-item">
-                  <a href="https://www.youtube.com/channel/UCrnnDdnU0w4anilEApGBhUg/videos" target="_blank" class="text-decoration-none"><i class="fab fa-youtube fa-xs bordeicono"></i></a>
-                </li>
-                <li class="nav-item">
-                  <a href="https://www.instagram.com/gorila.software/" target="_blank" class="text-decoration-none"><i class="fab fa-instagram fa-xs bordeicono"></i></a>
-                </li>
-            </ul>
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-md modal-dialog-centered">
+            <div class="modal-content p-1">
+              <div class="modal-header">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body p-3">
+                <div class="row">
+                  <div class="col inicio-sesion p-3 d-flex justify-content-center align-items-center flex-column" >
+                    <h3>Iniciar Sesión</h3>
+                    <p>¿Ya tienes cuenta? ¡Inicia Sesión!</p>
+                    <form>
+                     						
+                      <div class="form-group mb-3">
+                        <input type="email" name="email" class="form-control" placeholder="Correo electrónico" value="" required="">
+                      </div>
+                      <div class="form-group mb-3">
+                        <input type="password" name="password" class="form-control" placeholder="Contraseña" required="">
+                      </div>
+                      <div >
+                        <div class="row text-center">
+                          <div class="col">
+                            <button type="submit" class="btn btn-ingre mb-3">Ingresar</button>
+                          </div>
+                          <a class="btn-link contra mb-3" href="#">¿ Olvidó su contraseña ?</a>
+                          <br>
+                          <p class="cuenta">¿Aun no tienes una cuenta? <br> <a class="contra" href="#">Crea una cuenta aqui</a> </p>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-      </nav>
-    <!-- Navegacion -->
+        <!-- Modal -->
+
+        <!-- Navegacion -->
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="navbar">
+            <div class="container-lg" id="mainNav">
+              <a class="navbar-brand" href="#"><img src="img/logoblanco.png" ></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">INICIO</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">SISTEMA</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">MODULOS</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">CONTACTO</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">BLOG</a>
+                  </li>
+                </ul>
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                      <!-- boton modal -->
+                      <button type="button" class="btn micuenta" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        Mi Cuenta
+                      </button>
+                      <!-- boton modal -->
+                    </li>
+                </ul>
+                <ul class="navbar-nav" id="iconosnav">
+                    <li class="nav-item ">
+                        <a href="https://www.facebook.com/gorilasoftware" target="_blank" class="text-decoration-none"><i class="fab fa-facebook-f fa-xs bordeicono"></i></a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="https://www.youtube.com/channel/UCrnnDdnU0w4anilEApGBhUg/videos" target="_blank" class="text-decoration-none"><i class="fab fa-youtube fa-xs bordeicono"></i></a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="https://www.instagram.com/gorila.software/" target="_blank" class="text-decoration-none"><i class="fab fa-instagram fa-xs bordeicono"></i></a>
+                    </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        <!-- Navegacion -->
     
-    <!-- Header-Carousel -->
-    <header class="container-fluid p-0">
-        <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="carousel">
-            <div class="carousel-indicators">
-              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active " aria-current="true" aria-label="Slide 1"></button>
-              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-            </div>
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="img/slide1.jpg" class="d-block w-100 imgcarousel" alt="...">
-                <div class="carousel-caption  text-center mx-auto w-50">
-                  <h2 class="text-uppercase fw-bold">SISTEMA ERP 100% WEB</h2>
-                  <p class="fw-normal">Facturador ERP es un sistema 100% web, que cumple la funcion de punto de venta, ademas entrega información crucial para la toma de decisiones.</p>
-                  <a href="#" class="btn btn-color my-1">Conocer mas</a>
+        <!-- Header-Carousel -->
+        <header class="container-fluid p-0">
+            <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active " aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
                 </div>
-                <div class="carouseloscu"></div>
-              </div>
-              <div class="carousel-item">
-                <img src="img/slide2.jpg" class="d-block w-100 imgcarousel" alt="...">
-                <div class="carousel-caption  text-center mx-auto w-50">
-                  <h2 class="text-uppercase fw-bold">CONTABILIDAD Y COBROS</h2>
-                  <p class="fw-normal">Registros electrónicos de compra y ventas y sus modulos de cobro.</p>
-                  <a href="#" class="btn btn-color my-1">Conocer mas</a>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="img/slide1.jpg" class="d-block w-100 imgcarousel" alt="...">
+                    <div class="carousel-caption  text-center mx-auto w-50">
+                      <h2 class="text-uppercase fw-bold">SISTEMA ERP 100% WEB</h2>
+                      <p class="fw-normal">Facturador ERP es un sistema 100% web, que cumple la funcion de punto de venta, ademas entrega información crucial para la toma de decisiones.</p>
+                      <a href="#" class="btn btn-color my-1">Conocer mas</a>
+                    </div>
+                    <div class="carouseloscu"></div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="img/slide2.jpg" class="d-block w-100 imgcarousel" alt="...">
+                    <div class="carousel-caption  text-center mx-auto w-50">
+                      <h2 class="text-uppercase fw-bold">CONTABILIDAD Y COBROS</h2>
+                      <p class="fw-normal">Registros electrónicos de compra y ventas y sus modulos de cobro.</p>
+                      <a href="#" class="btn btn-color my-1">Conocer mas</a>
+                    </div>
+                    <div class="carouseloscu"></div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="img/slide3.jpg" class="d-block w-100 imgcarousel" alt="...">
+                    <div class="carousel-caption  text-center mx-auto w-50">
+                      <h2 class="text-uppercase fw-bold">CONTROL DE DTE RECIBIDOS</h2>
+                      <p class="fw-normal">Consulta y acepta los DTE recibidos desde Facturador ERP e ingresalos a tus registros contables</p>
+                      <a href="#" class="btn btn-color my-1">Conocer mas</a>
+                    </div>
+                    <div class="carouseloscu"></div>
+                  </div>
                 </div>
-                <div class="carouseloscu"></div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                  
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                
+                  <span class="visually-hidden">Next</span>
+                </button>
               </div>
-              <div class="carousel-item">
-                <img src="img/slide3.jpg" class="d-block w-100 imgcarousel" alt="...">
-                <div class="carousel-caption  text-center mx-auto w-50">
-                  <h2 class="text-uppercase fw-bold">CONTROL DE DTE RECIBIDOS</h2>
-                  <p class="fw-normal">Consulta y acepta los DTE recibidos desde Facturador ERP e ingresalos a tus registros contables</p>
-                  <a href="#" class="btn btn-color my-1">Conocer mas</a>
-                </div>
-                <div class="carouseloscu"></div>
-              </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-              
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-            
-              <span class="visually-hidden">Next</span>
-            </button>
-          </div>
-    </header>
-    <!-- Header-Carousel -->
+        </header>
+        <!-- Header-Carousel -->
 
         <!-- Seccion facturador -->
         <section class="container-sm text-center text-md-start py-5 px-4" id="factu">
@@ -199,7 +219,7 @@
         <!-- Seccion impresora -->
 
         <!-- Seccion dispositivos -->
-        <section class="container-fluid  dispositivos py-5 text-center text-md-start oscuro">
+        <section class="container-fluid py-5 text-center text-md-start fondorojo">
             <div class="row align-items-center container mx-auto">
                 <div class="col-md-6"><figure><img class="img-fluid p-5" src="img/computadores.png" alt=""></figure></div>
                 <div class="col-md-6">
@@ -277,12 +297,12 @@
              <div class="container text-center text-white">
                  <div class="row align-items-center">
                      <div class="col-md-4 py-2">
-                         <div class="row py-5 text-center text-md-start">
-                           <div class="col-12 ">
+                         <div class="row py-5 text-center text-md-start flex-column">
+                           <div class="col">
                             <figure><img class="img-fluid p-1 w-75" src="img/logo-blanco.png" alt="#"></figure>
                            </div>
-                           <div class="col-12"><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas, itaque illo aspernatur eius porro dolorum sapiente.</p></div>
-                           <div class="col-12">
+                           <div class="col"><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas, itaque illo aspernatur eius porro dolorum sapiente.</p></div>
+                           <div class="col">
                                 <ul class="navbar-nav justify-content-center d-lg-flex justify-content-md-start" id="iconosfoot">
                                   <li class="nav-item ">
                                       <a href="https://www.facebook.com/gorilasoftware" target="_blank" class="text-decoration-none"><i class="fab fa-facebook-f fa-xs bordeicono"></i></a>
